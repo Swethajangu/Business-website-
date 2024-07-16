@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .content-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            display: none;
+        }
+        .image-section img.active {
+            display: block;
+        }
+        .content-item {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">OUR PROJECT</h1>
+        <h2 class="text-center">WHY WE ARE BEST</h2>
+        <div class="row content-section">
+            <div class="col-md-6 image-section">
+                <img src="image1.png" alt="Image 1" class="active">
+                <img src="image2.png" alt="Image 2">
+                <img src="image3.png" alt="Image 3">
+            </div>
+            <div class="col-md-6">
+                <div class="content-item" data-image="0">
+                    <h3>Genderless Kei – Japan’s Hot</h3>
+                    <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of...</p>
+                </div>
+                <div class="content-item" data-image="1">
+                    <h3>Better Strategy & Quality</h3>
+                    <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of...</p>
+                </div>
+                <div class="content-item" data-image="2">
+                    <h3>Genderless Kei – Japan’s Hot</h3>
+                    <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.content-item').on('click', function(){
+                var index = $(this).data('image');
+                $('.image-section img').removeClass('active');
+                $('.image-section img').eq(index).addClass('active');
+            });
+        });
+    </script>
+</body>
+</html>

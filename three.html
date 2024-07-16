@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Do</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="three.css">
+    <style>
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 15px; 
+        }
+        .image-container img {
+            height: 200px; 
+            width: auto;  
+            display: block;
+            margin: 0 auto; 
+        }
+        .hover-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .image-container:hover .hover-content {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="section-title">What We Do</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="font-weight-bold">SERVICES PROVIDE FOR YOU</p>
+            </div>
+            <div class="col-md-6">
+                <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat at fermentum.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="image-container">
+                    <img src="three1.jpg" class="img-fluid" alt="Image 1">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="image-container">
+                    <img src="three.jpg" class="img-fluid" alt="Image 2">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="image-container">
+                    <img src="web.jpg" class="img-fluid" alt="Image 3">
+                    <div class="hover-content">
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque.</p>
+                        <a href="https://fylehq.com" target="_blank" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="image-container">
+                    <img src="three3.jpg" class="img-fluid" alt="Image 4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="three.js"></script>
+</body>
+</html>

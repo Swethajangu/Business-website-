@@ -1,0 +1,19 @@
+<style>
+    .content-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .image-section img {
+        max-width: 100%;
+        height: auto;
+        display: none;
+    }
+    .image-section img.active {
+        display: block;
+    }
+    .content-item {
+        cursor: pointer;
+    }
+</style>
